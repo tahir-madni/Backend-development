@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registartion Form</title>
+    <link rel="stylesheet" href="registration.css">
+  </head>
+  <body>
+    <a href="index.html"><img src="./resources/arrow.png" alt="return home" /></a>
+    <div class="form-container">
+      <img src="./resources/logo.png" alt="SMIT logo" />
+      <h1>STUDENT REGISTRATION FORM</h1>
+      <form action="">
+        <table>
+          <tbody>
+            <tr>
+              <td>First Name</td>
+              <td>
+                <input
+                  type="text"
+                  placeholder="Enter First Name"
+                  maxlength="30"
+                />
+                (max 30 characters a-z and A-Z)
+              </td>
+            </tr>
+            <tr>
+              <td>Last Name</td>
+              <td>
+                <input
+                  type="text"
+                  placeholder="Enter Last Name"
+                  maxlength="30"
+                />
+                (max 30 characters a-z and A-Z)
+              </td>
+            </tr>
+            <tr>
+              <td>Date of birth</td>
+              <td>
+                <input type="date" />
+              </td>
+            </tr>
+            <tr>
+              <td>Email Id</td>
+              <td><input type="email" placeholder="Enter Email Address" /></td>
+            </tr>
+            <tr>
+              <td>Mobile Number</td>
+              <td>
+                <input
+                  type="tel"
+                  placeholder="Enter Mobile Number"
+                  maxlength="10"
+                />
+                (10 Digit Number)
+              </td>
+            </tr>
+            <tr>
+              <td>Gender</td>
+              <td>
+                <label for="male">Male </label>
+                <input type="radio" id="male" name="gender" />
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" />
+              </td>
+            </tr>
+            <tr>
+              <td>Address</td>
+              <td><textarea></textarea></td>
+            </tr>
+            <tr>
+              <td>City</td>
+              <td>
+                <input
+                  type="text"
+                  placeholder="Enter City Name"
+                  maxlength="30"
+                />
+                (max 30 characters a-z and A-Z)
+              </td>
+            </tr>
+            <tr>
+              <td>Pin Code</td>
+              <td>
+                <input
+                  type="number"
+                  placeholder="Enter Pin code "
+                  maxlength="6"
+                />
+                (6 Digit number)
+              </td>
+            </tr>
+            <tr>
+              <td>State</td>
+              <td>
+                <input
+                  type="text"
+                  placeholder="Enter State Name"
+                  maxlength="30"
+                />
+                (max 30 characters a-z and A-Z)
+              </td>
+            </tr>
+            <tr>
+              <td>Country</td>
+              <td><input type="text" placeholder="Enter Country Name" /></td>
+            </tr>
+            <tr>
+              <td>Hobbies</td>
+              <td>
+                <label for="drawing">Drawing </label>
+                <input type="checkbox" id="drawing" name="hobbies" />
+                <label for="singing">Singing </label>
+                <input type="checkbox" id="singing" name="hobbies" />
+                <label for="dancing">Dancing </label>
+                <input type="checkbox" id="dancing" name="hobbies" />
+                <label for="sketching">Sketching </label>
+                <input type="checkbox" id="sketching" name="hobbies" />
+
+                <label for="other">Other </label>
+                <input type="checkbox" id="other" name="hobbies" />
+                <input type="text" id="other" />
+              </td>
+            </tr>
+            <tr>
+              <td>Qualifications</td>
+              <td>
+                <table id="qualification-table">
+                  <thead>
+                    <tr>
+                      <th>SI.No.</th>
+                      <th>Examination</th>
+                      <th>Board</th>
+                      <th>Percentage</th>
+                      <th>Year of Passing</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Class X</td>
+                      <td><input type="text" maxlength="10" /></td>
+                      <td><input type="number" /></td>
+                      <td><input type="number" /></td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Class X11</td>
+                      <td><input type="text" maxlength="10" /></td>
+                      <td><input type="number" /></td>
+                      <td><input type="number" /></td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Graduation</td>
+                      <td><input type="text" maxlength="10" /></td>
+                      <td><input type="number" /></td>
+                      <td><input type="number" /></td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Masters</td>
+                      <td><input type="text" maxlength="10" /></td>
+                      <td><input type="number" /></td>
+                      <td><input type="number" /></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>(10 char max)</td>
+                      <td>(upto 2 decimal)</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>Courses Applied for</td>
+              <td>
+                <select>
+                  <option value="" disabled selected>Choose course</option>
+                  <option value="">BSCS</option>
+                  <option value="">BBA</option>
+                  <option value="">B.Com</option>
+                  <option value="">B.Sc</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Upload your Picture <br />
+                (only .png,.jpg,.jpeg,.jpeg format)
+              </td>
+              <td><input type="file" accept=".png,.jpg,.jpeg,.jpeg" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+      <!-- <form action="">
+        <div class="data-feild">
+          <label for="first-name">First Name: </label>
+          <input type="text" id="first-name" />
+        </div>
+        <div class="data-feild">
+          <label for="last-name">Last Name: </label>
+          <input type="text" id="last-name" />
+        </div>
+        <div class="data-feild">
+          <label for="dob">Date of birth: </label>
+          <input type="date" id="dob" />
+        </div>
+        <div class="data-feild">
+          <label for="email">Email: </label>
+          <input type="email" id="email" />
+        </div>
+        <div class="data-feild">
+          <label for="phone-number">Phone Number: </label>
+          <input type="tel" id="phone-number" />
+        </div>
+        <div class="data-feild">
+          <p>Gender:</p>
+          <label for="male">Male </label>
+          <input type="radio" id="male" name="gender" />
+          <label for="female">Female</label>
+          <input type="radio" id="female" name="gender" />
+        </div>
+        <div class="data-feild">
+          <label for="address">Address: </label>
+          <textarea id="address"></textarea>
+        </div>
+        <div class="data-feild">
+          <label for="city">City: </label>
+          <input type="text" id="city" />
+        </div>
+        <div class="data-feild">
+          <label for="pincode">Pincode: </label>
+          <input type="number" id="pincode" />
+        </div>
+        <div class="data-feild">
+          <label for="state">state: </label>
+          <input type="text" id="state" />
+        </div>
+        <div class="data-feild">
+          <label for="country">Country: </label>
+          <input type="text" id="country" />
+        </div>
+        <div class="data-feild">
+          <p>Hobbies:</p>
+          <label for="drawing">Drawing </label>
+          <input type="checkbox" id="drawing" name="hobbies" />
+          <label for="singing">Singing </label>
+          <input type="checkbox" id="singing" name="hobbies" />
+          <label for="dancing">Dancing </label>
+          <input type="checkbox" id="dancing" name="hobbies" />
+          <label for="sketching">Sketching </label>
+          <input type="checkbox" id="sketching" name="hobbies" />
+          <label for="other">Other </label>
+          <input type="checkbox" id="other" name="hobbies" />
+          <input type="text" id="other" />
+        </div>
+                <div class="data-feild">
+
+        </div>
+
+        <div class="btns">
+          <input type="reset" value="Submit" />
+          <input type="reset" value="Reset" />
+        </div>
+      </form> -->
+    </div>
+  </body>
+</html>
