@@ -16,18 +16,19 @@ body {
   background-color: #213555;
   color: #f1f0ef;
   border-radius: 15px;
-  height: 50%;
+ 
   width: 50%;
   display: flex;
   flex-direction: column;
   padding: 20px;
   justify-content: space-around;
   align-items: center;
+  gap: 20px;
 }
 .link-container>div{
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .form-container {

@@ -14,10 +14,10 @@ body {
 }
 body > a > img {
   position: absolute;
-  left: 20px;
-  top: 20px;
-  width: 100px;
-  height: 100px;
+  left: 3%;
+  top: 3px;
+  width: 50px;
+  height: 60px;
 }
 .form-container {
   background-color: #f1f0ef;
@@ -26,7 +26,7 @@ body > a > img {
   align-items: center;
   justify-content: space-evenly;
   width: 50%;
-  height: 50%;
+
   border-radius: 10px;
 }
 .form-container > img {
@@ -36,10 +36,9 @@ body > a > img {
 form {
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 30px 10px;
   gap: 25px;
   align-items: center;
-  width: 50%;
 }
 .data-feild {
   display: flex;
@@ -47,6 +46,7 @@ form {
   width: 100%;
   font-size: 22px;
   font-weight: 500;
+  gap: 20px;
 }
 .data-feild > input {
   border: 2px solid #000;
